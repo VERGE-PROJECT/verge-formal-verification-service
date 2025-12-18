@@ -30,7 +30,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"model_id": "DQNCartpole_1
 ## Preparing the DQN model for verification
 
 Preparing the model for verification includes sampling and discretizing the transitions of the environment and the trained agent, the outline of the process is below.
-For more details consult VERGE D4.1:
+For more details consult [VERGE deliverable](https://www.verge-project.eu/dissemination/deliverables) 4.1:
 
 ```python
 from verge_vf import to_prism
@@ -57,3 +57,4 @@ to_prism.write_prism_model_initial_states(transition_probs, configuration, prism
 # VERGE Project
 
 The ability to formally verify the safety of models contributes to VERGE *Objective 4: Develop tools that ensure the security, privacy and trustworthiness of the VERGE system.*
+For more technical details, please refer to the [VERGE deliverable](https://www.verge-project.eu/dissemination/deliverables) 4.1 and 4.2.
